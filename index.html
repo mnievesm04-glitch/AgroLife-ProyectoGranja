@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AgroLife - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-simple">
+
+    <h1 class="titulo-simple">AGROLIFE</h1>
+
+    <div class="contenedor-botones-simple">
+        <button class="btn-simple" onclick="location.href='configuracion.html'">Nueva Partida</button>
+        <button class="btn-simple" onclick="location.href='juego.html'">Continuar Partida</button>
+        <button class="btn-simple" onclick="if(confirm('¿Borrar?')) { localStorage.clear(); alert('Datos borrados'); }">Eliminar Partida</button>
+        <a href="https://github.com/tu-usuario" target="_blank" class="enlace-simple">GitHub</a>
+    </div>
+
+</body>
+</html>

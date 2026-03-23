@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AgroLife - Configuración</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="background-color: #d2b48c; display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+    <div class="contenedor-tienda" style="width: 500px;">
+        <h2>Configura tu Granjero</h2>
+        <hr><br>
+
+        <label>Nombre del Granjero:</label><br>
+        <input type="text" id="nombreInput" placeholder="Ej: Pepito" style="padding: 10px; width: 80%;"><br><br>
+
+        <label>Dificultad:</label><br>
+        <select id="difSelect" style="padding: 10px; width: 80%;">
+            <option value="facil">Fácil (Dinero extra)</option>
+            <option value="normal">Normal</option>
+            <option value="dificil">Difícil (Poco dinero)</option>
+        </select><br><br>
+
+        <label>Energía inicial (50 - 200):</label><br>
+        <input type="number" id="energiaInput" value="100" min="50" max="200" style="padding: 10px; width: 80%;"><br><br>
+
+        <label>Semilla de regalo:</label><br>
+        <select id="cultivoRegalo" style="padding: 10px; width: 80%;">
+            <option value="tomate">Pack de Tomates</option>
+            <option value="trigo">Pack de Trigo</option>
+        </select><br><br>
+
+        <button onclick="validarYComenzar()" class="btn-comprar" style="padding: 15px; width: 90%; cursor:pointer;">
+            ¡CREAR GRANJA!
+        </button>
+    </div>
+
+    <script src="configuracion.js"></script>
+</body>
+</html>

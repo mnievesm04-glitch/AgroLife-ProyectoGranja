@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroLife - Mi Granja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-juego">
+
+    <header id="hud">
+        <div class="stat-item">💰 Dinero: <span id="display-dinero">100</span></div>
+        <div class="stat-item">⚡ Energía: <span id="display-energia">100</span></div>
+        <div class="stat-item">🧑‍🌾 <span id="display-nombre">Granjero</span></div>
+    </header>
+
+    <main id="granja-grid"></main>
+
+    <footer id="footer-interfaz">
+        <div class="hotbar">
+            <div class="slot selected" data-item="azada" title="Azada">🪓</div>
+            <div class="slot" data-item="regadera" title="Regadera">🚿</div>
+            <div class="slot" data-item="hoz" title="Hoz">⚔️</div>
+
+            <div class="slot" data-item="semilla_tomate" title="Semilla Tomate">
+                🍅 <span class="cantidad" id="cant-tomate">0</span>
+            </div>
+            <div class="slot" data-item="semilla_trigo" title="Semilla Trigo">
+                🌾 <span class="cantidad" id="cant-trigo">0</span>
+            </div>
+
+            <div class="slot" title="Ir a la Tienda">
+                <a href="tienda.html" style="text-decoration: none; font-size: 25px;">🏪</a>
+            </div>
+
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+        </div>
+
+        <button class="btn-guardar-estetico" onclick="manualSave()">💾 Guardar</button>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+    <script src="Clase.js"></script> <script src="planta.js"></script>
+</body>
+</html>
