@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // --- LÓGICA DE PLANTADO ---
-            // Buscamos si el item seleccionado existe en nuestro CATALOGO de la clase
             if (div.dataset.estado === 'vacio' && CATALOGO[itemID]) {
                 const infoCultivo = CATALOGO[itemID]; // Obtenemos el objeto creado en Clase.js
 

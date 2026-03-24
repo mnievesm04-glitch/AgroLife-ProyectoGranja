@@ -14,5 +14,7 @@ class Cultivo {
 // Ahora, si cambias el tiempo aquí, se cambiará automáticamente en todo el juego
 const CATALOGO = {
     'semilla_tomate': new Cultivo('semilla_tomate', 'tomate', 5000, "🌱", "🍅", 20),
-    'semilla_trigo': new Cultivo('semilla_trigo', 'trigo', 8000, "🌱", "🌾", 15)
+    'semilla_trigo': new Cultivo('semilla_trigo', 'trigo', 8000, "🌱", "🌾", 15),
+    /*Defensa añadir nuevo cultivo*/
+    'semilla_Calabaza' : new Cultivo ('semilla_calabaza', 'zalabaza', 12000, "🌱", "🎃", 50)
 };

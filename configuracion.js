@@ -29,6 +29,7 @@ function validarYComenzar() {
         inventario: {
             tomate: (regalo === 'tomate' ? 10 : 5),
             trigo: (regalo === 'trigo' ? 10 : 5),
+            calabaza: (regalo === 'calabaza' ? 10 : 5),
             calabaza: 0,
             sandia: 0,
             cebolla: 0
